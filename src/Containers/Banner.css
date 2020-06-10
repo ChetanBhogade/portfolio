@@ -1,49 +1,49 @@
 .personal-text h6 {
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2.1px;
-    font-weight: normal;
-    margin-bottom: 12px;
-    color: #222222;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+  font-weight: normal;
+  margin-bottom: 12px;
+  color: #222222;
 }
 
 .personal-text h3 {
-    font-size: 48px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    color: #222222;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #222222;
 }
 
 .personal-text h4 {
-    font-size: 16px;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: #222222;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #222222;
 }
 
 .personal-text p {
-    font-family: "Roboto", sans-serif;
-    max-width: 540px;
-    color: #777777;
-    margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+  max-width: 540px;
+  color: #777777;
+  margin-bottom: 40px;
 }
 
 .personal-text ul li {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .personal-text ul li a {
-    position: relative;
-    padding-left: 40px;
-    font-size: 16px;
-    color: #777777;
+  position: relative;
+  padding-left: 40px;
+  font-size: 16px;
+  color: #777777;
 }
 
 .personal-text ul li a svg {
-    position: absolute;
-    left: 0px;
-    color: #766dff;
+  position: absolute;
+  left: 0px;
+  color: #766dff;
 }
