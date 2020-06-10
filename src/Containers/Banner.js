@@ -5,16 +5,17 @@ import Img from "../Assets/ChetanBhogade.jpg";
 import { FiCalendar, FiPhone, FiMail, FiHome } from "react-icons/fi";
 
 import "./Banner.css";
+import SocialIcons from "../Components/SocialIcons";
 
 function Banner() {
   return (
     <div className="mt-5">
       <Paper elevation={3} className="p-4">
         <Row>
-          <Col lg="8" sm="12" className="mx-auto">
+          <Col lg="8" md="12" sm="12" className="mx-auto pr-4">
             <Image src={Img} style={{ width: "100%" }} rounded />
           </Col>
-          <Col lg="4" sm="12" className="personal-text">
+          <Col lg="4" md="12" sm="12" className="personal-text mt-3 pl-4">
             <h6>Hello Everybody, I am </h6>
             <h3>Chetan Bhogade</h3>
             <h4>Full Stack Web Developer</h4>
@@ -48,6 +49,8 @@ function Banner() {
                 </a>
               </li>
             </ul>
+
+            <SocialIcons size="25" />
           </Col>
         </Row>
       </Paper>

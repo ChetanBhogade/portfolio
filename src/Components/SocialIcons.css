@@ -1,0 +1,9 @@
+.personal-social {
+    margin-top: 45px !important;
+}
+
+.personal-social li {
+    display: inline-block;
+    margin-right: 7px;
+}
+
