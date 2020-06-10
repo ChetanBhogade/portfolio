@@ -5,6 +5,7 @@ import Banner from "./Containers/Banner";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
+import About from "./Containers/About";
 
 function App() {
   return (
@@ -12,8 +13,7 @@ function App() {
       <Header />
       <Container>
         <Banner />
-        <h1>Chetan Bhogade</h1>
-        <p>Full Stack Web Developer</p>
+        <About />
       </Container>
     </div>
   );
