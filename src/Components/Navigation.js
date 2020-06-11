@@ -7,9 +7,11 @@ import {
   AppBar,
   makeStyles,
   Container,
+  Avatar,
 } from "@material-ui/core";
-import { MdMenu } from "react-icons/md";
+// import { MdMenu } from "react-icons/md";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import Img from "../Assets/ChetanBhogade.jpg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -40,7 +42,8 @@ function Navigation() {
               color="inherit"
               aria-label="menu"
             >
-              <MdMenu />
+              {/* <MdMenu /> */}
+              <Avatar alt="Chetan Bhogade" src={Img} />
             </IconButton>
             <Typography variant="inherit" className={classes.title}>
               Chetan Bhogade

@@ -13,7 +13,7 @@ const aboutItems = [
     number: 14,
     desc: "Total Projects",
   },
-  { icon: <FaUsers size={iconSize} />, number: 14, desc: "Total Clients" },
+  { icon: <FaUsers size={iconSize} />, number: 4, desc: "Total Clients" },
 ];
 const skills = [
   { name: "Python", progress: 90 },
