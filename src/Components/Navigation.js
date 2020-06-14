@@ -11,7 +11,7 @@ import {
 } from "@material-ui/core";
 // import { MdMenu } from "react-icons/md";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-import Img from "../Assets/ChetanBhogade.jpg";
+import Img from "../Assets/FaceProfile.jpg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
