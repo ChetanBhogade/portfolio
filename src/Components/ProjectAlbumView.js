@@ -31,7 +31,48 @@ const useStyle = makeStyles((theme) => ({
   },
 }));
 
-const data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const data = [
+  {
+    name: "E-Commerce Website - 'eComm'",
+    description:
+      "Basic eCommerce website with the implementation of some Analytics based on views, time and amount purchased.",
+    image: Img,
+    visit: "http://chetanbhogade.pythonanywhere.com/",
+    src: "https://github.com/ChetanBhogade/E-Commerce-Project",
+  },
+  {
+    name: "Card-Memory Game",
+    description:
+      "A game where you have to click on a card to see what icon is underneath it and try to find the matching icon underneath the other cards.",
+    image: Img,
+    visit: "https://chetanbhogade.github.io/card-memory-game/",
+    src: "https://github.com/ChetanBhogade/card-memory-game",
+  },
+  {
+    name: "Event Countdown",
+    description:
+      "Continuously decrementing countdown timer to a user entered event.",
+    image: Img,
+    visit: "https://chetanbhogade.github.io/Event-Countdown/",
+    src: "https://github.com/ChetanBhogade/Event-Countdown",
+  },
+  {
+    name: "Ncc Management",
+    description:
+      "All Ncc related paper works are try to make digital. All CRUD operations are performed.",
+    image: Img,
+    visit: null,
+    src: "https://github.com/ChetanBhogade/NCC-Management",
+  },
+  {
+    name: "Text-To-Speech",
+    description:
+      "This software can read text from input field and can also read whole text file.",
+    image: Img,
+    visit: null,
+    src: "https://github.com/ChetanBhogade/TextToSpeech/blob/master/TextToSpeech.py",
+  },
+];
 
 function ProjectAlbumView() {
   const classes = useStyle();
@@ -46,25 +87,41 @@ function ProjectAlbumView() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image={Img}
-                    title="Image Title"
+                    image={item.image}
+                    title={item.name}
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading {item}
+                      {item.name}
                     </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
-                    </Typography>
+                    <Typography>{item.description}</Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
-                      View
-                    </Button>
-                    <Button size="small" color="primary">
-                      Edit
-                    </Button>
+                    {item.visit ? (
+                      <a
+                        href={item.visit}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <Button size="small" color="primary">
+                          Visit
+                        </Button>
+                      </a>
+                    ) : null}
+
+                    {item.src ? (
+                      <a
+                        href={item.src}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <Button size="small" color="secondary">
+                          Source Code
+                        </Button>
+                      </a>
+                    ) : null}
                   </CardActions>
                 </Card>
               </Grid>
