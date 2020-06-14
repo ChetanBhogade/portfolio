@@ -61,7 +61,7 @@ function Navigation() {
               </Button>
               <Button color="inherit">
                 <Link style={customStyle} to="/contact">
-                  Contact
+                  Projects
                 </Link>
               </Button>
             </Router>
