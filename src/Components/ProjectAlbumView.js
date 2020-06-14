@@ -11,7 +11,11 @@ import {
   Button,
 } from "@material-ui/core";
 
-import Img from "../Assets/ChetanBhogade.jpg";
+import CardGameImg from "../Assets/Projects/CardMemoryGame.png"
+import eCommImg from "../Assets/Projects/eComm.png"
+import EventImg from "../Assets/Projects/EventCountdown.png"
+import NccImg from "../Assets/Projects/NccManagement.png"
+import TtsImg from "../Assets/Projects/TextToSpeech.png"
 
 const useStyle = makeStyles((theme) => ({
   cardGrid: {
@@ -36,7 +40,7 @@ const data = [
     name: "E-Commerce Website - 'eComm'",
     description:
       "Basic eCommerce website with the implementation of some Analytics based on views, time and amount purchased.",
-    image: Img,
+    image: eCommImg,
     visit: "http://chetanbhogade.pythonanywhere.com/",
     src: "https://github.com/ChetanBhogade/E-Commerce-Project",
   },
@@ -44,7 +48,7 @@ const data = [
     name: "Card-Memory Game",
     description:
       "A game where you have to click on a card to see what icon is underneath it and try to find the matching icon underneath the other cards.",
-    image: Img,
+    image: CardGameImg,
     visit: "https://chetanbhogade.github.io/card-memory-game/",
     src: "https://github.com/ChetanBhogade/card-memory-game",
   },
@@ -52,7 +56,7 @@ const data = [
     name: "Event Countdown",
     description:
       "Continuously decrementing countdown timer to a user entered event.",
-    image: Img,
+    image: EventImg,
     visit: "https://chetanbhogade.github.io/Event-Countdown/",
     src: "https://github.com/ChetanBhogade/Event-Countdown",
   },
@@ -60,7 +64,7 @@ const data = [
     name: "Ncc Management",
     description:
       "All Ncc related paper works are try to make digital. All CRUD operations are performed.",
-    image: Img,
+    image: NccImg,
     visit: null,
     src: "https://github.com/ChetanBhogade/NCC-Management",
   },
@@ -68,7 +72,7 @@ const data = [
     name: "Text-To-Speech",
     description:
       "This software can read text from input field and can also read whole text file.",
-    image: Img,
+    image: TtsImg,
     visit: null,
     src: "https://github.com/ChetanBhogade/TextToSpeech/blob/master/TextToSpeech.py",
   },
