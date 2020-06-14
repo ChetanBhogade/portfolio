@@ -1,0 +1,72 @@
+.footer-area {
+  background: #000000;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.f-title {
+  margin-bottom: 35px;
+}
+
+.f-title h3 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+  margin-bottom: 0px;
+}
+
+.f-about p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  margin-bottom: 30px;
+}
+
+.f-contact {
+  padding-bottom: 20px;
+}
+
+.f-contact h6 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.f-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 2px 0px;
+}
+
+.f-contact .row .col-sm-1 {
+  width: 50px;
+}
+
+.f-contact .row .col-sm-11 {
+  width: 50%;
+}
+
+.f-follow p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  margin-bottom: 10px;
+}
+
+.f-follow .list li {
+  margin-bottom: 17px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.f-follow .list li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
