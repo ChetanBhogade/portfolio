@@ -10,7 +10,8 @@ import {
   Avatar,
 } from "@material-ui/core";
 // import { MdMenu } from "react-icons/md";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-scroll";
 import Img from "../Assets/FaceProfile.jpg";
 
 const useStyles = makeStyles((theme) => ({
@@ -55,12 +56,12 @@ function Navigation() {
                 </Link>
               </Button>
               <Button color="inherit">
-                <Link style={customStyle} to="/about">
+                <Link style={customStyle} to="about" smooth={true} duration={1000} >
                   About
                 </Link>
               </Button>
               <Button color="inherit">
-                <Link style={customStyle} to="/contact">
+                <Link style={customStyle} to="project" smooth={true} duration={1000} >
                   Projects
                 </Link>
               </Button>

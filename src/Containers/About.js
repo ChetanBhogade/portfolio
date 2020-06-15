@@ -64,7 +64,7 @@ export class About extends Component {
 
   render() {
     return (
-      <Row className="about">
+      <Row id="about" className="about">
         <Col lg="6" className="pr-5">
           <div>
             <h4>About Myself</h4>
