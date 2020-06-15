@@ -9,9 +9,8 @@ import {
   Container,
   Avatar,
 } from "@material-ui/core";
-// import { MdMenu } from "react-icons/md";
-import { BrowserRouter as Router } from "react-router-dom";
-import { Link } from "react-scroll";
+import { animateScroll as scroll, Link } from "react-scroll";
+
 import Img from "../Assets/FaceProfile.jpg";
 
 const useStyles = makeStyles((theme) => ({
@@ -34,7 +33,7 @@ function Navigation() {
   };
   return (
     <div>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Container>
           <Toolbar>
             <IconButton
@@ -42,30 +41,33 @@ function Navigation() {
               className={classes.menuButton}
               color="inherit"
               aria-label="menu"
+              onClick={() => {scroll.scrollToTop()}}
             >
-              {/* <MdMenu /> */}
               <Avatar alt="Chetan Bhogade" src={Img} />
             </IconButton>
             <Typography variant="inherit" className={classes.title}>
               Chetan Bhogade
             </Typography>
-            <Router>
-              <Button color="inherit">
-                <Link style={customStyle} to="/">
-                  Home
-                </Link>
-              </Button>
-              <Button color="inherit">
-                <Link style={customStyle} to="about" smooth={true} duration={1000} >
-                  About
-                </Link>
-              </Button>
-              <Button color="inherit">
-                <Link style={customStyle} to="project" smooth={true} duration={1000} >
-                  Projects
-                </Link>
-              </Button>
-            </Router>
+            <Button color="inherit">
+              <Link
+                style={customStyle}
+                to="about"
+                smooth={true}
+                duration={1000}
+              >
+                About
+              </Link>
+            </Button>
+            <Button color="inherit">
+              <Link
+                style={customStyle}
+                to="project"
+                smooth={true}
+                duration={1000}
+              >
+                Projects
+              </Link>
+            </Button>
           </Toolbar>
         </Container>
       </AppBar>
