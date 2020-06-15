@@ -9,7 +9,7 @@ import SocialIcons from "../Components/SocialIcons";
 
 function Banner() {
   return (
-    <div className="mt-5">
+    <div id="banner" className="banner-section">
       <Paper elevation={3} className="p-4">
         <Row>
           <Col lg="8" md="12" sm="12" className="mx-auto pr-4">
