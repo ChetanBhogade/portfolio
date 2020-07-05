@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f1eb0fb145071f61085857834c65f6d6",
+    "revision": "1d83dcd02f182dd7763aa309538e6dbd",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "78b68d695f5c1066062b",
+    "revision": "07de544419eacdf7630f",
     "url": "/portfolio/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "515b41c5bf5efcd61109",
+    "revision": "558908bc90a6987377dc",
     "url": "/portfolio/static/css/main.41e0d9cb.chunk.css"
   },
   {
-    "revision": "78b68d695f5c1066062b",
-    "url": "/portfolio/static/js/2.5062abb7.chunk.js"
+    "revision": "07de544419eacdf7630f",
+    "url": "/portfolio/static/js/2.b1c79080.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/portfolio/static/js/2.5062abb7.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.b1c79080.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "515b41c5bf5efcd61109",
-    "url": "/portfolio/static/js/main.6872f2f0.chunk.js"
+    "revision": "558908bc90a6987377dc",
+    "url": "/portfolio/static/js/main.918eda4c.chunk.js"
   },
   {
     "revision": "88fbd3d397ae3690d5f2",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "abaf0b5c245ee71d93c089c3cee8c72e",
     "url": "/portfolio/static/media/NccManagement.abaf0b5c.png"
+  },
+  {
+    "revision": "b9af9f59fe31e071d2a1bf196b67a6b4",
+    "url": "/portfolio/static/media/RedFruitAgro.b9af9f59.png"
   },
   {
     "revision": "5596262c8483841b9f32128a0a6e2f3a",

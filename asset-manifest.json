@@ -1,31 +1,32 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.41e0d9cb.chunk.css",
-    "main.js": "/portfolio/static/js/main.6872f2f0.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.6872f2f0.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.918eda4c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.918eda4c.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.fb1b3dac.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.fb1b3dac.js.map",
     "static/css/2.af3c1da9.chunk.css": "/portfolio/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.5062abb7.chunk.js": "/portfolio/static/js/2.5062abb7.chunk.js",
-    "static/js/2.5062abb7.chunk.js.map": "/portfolio/static/js/2.5062abb7.chunk.js.map",
+    "static/js/2.b1c79080.chunk.js": "/portfolio/static/js/2.b1c79080.chunk.js",
+    "static/js/2.b1c79080.chunk.js.map": "/portfolio/static/js/2.b1c79080.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.4b6ddcc6bcdf77282479b9928a5684a2.js": "/portfolio/precache-manifest.4b6ddcc6bcdf77282479b9928a5684a2.js",
+    "precache-manifest.e28245b484fc5ee870b213a40859888f.js": "/portfolio/precache-manifest.e28245b484fc5ee870b213a40859888f.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/portfolio/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.41e0d9cb.chunk.css.map": "/portfolio/static/css/main.41e0d9cb.chunk.css.map",
-    "static/js/2.5062abb7.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5062abb7.chunk.js.LICENSE.txt",
+    "static/js/2.b1c79080.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b1c79080.chunk.js.LICENSE.txt",
     "static/media/CardMemoryGame.png": "/portfolio/static/media/CardMemoryGame.b55e6452.png",
     "static/media/ChetanBhogade.jpg": "/portfolio/static/media/ChetanBhogade.d7019495.jpg",
     "static/media/EventCountdown.png": "/portfolio/static/media/EventCountdown.1eedb596.png",
     "static/media/FaceProfile.jpg": "/portfolio/static/media/FaceProfile.96faae6f.jpg",
     "static/media/NccManagement.png": "/portfolio/static/media/NccManagement.abaf0b5c.png",
+    "static/media/RedFruitAgro.png": "/portfolio/static/media/RedFruitAgro.b9af9f59.png",
     "static/media/eComm.png": "/portfolio/static/media/eComm.5596262c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.fb1b3dac.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.5062abb7.chunk.js",
+    "static/js/2.b1c79080.chunk.js",
     "static/css/main.41e0d9cb.chunk.css",
-    "static/js/main.6872f2f0.chunk.js"
+    "static/js/main.918eda4c.chunk.js"
   ]
 }
