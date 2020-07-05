@@ -11,11 +11,12 @@ import {
   Button,
 } from "@material-ui/core";
 
-import CardGameImg from "../Assets/Projects/CardMemoryGame.png"
-import eCommImg from "../Assets/Projects/eComm.png"
-import EventImg from "../Assets/Projects/EventCountdown.png"
-import NccImg from "../Assets/Projects/NccManagement.png"
-import TtsImg from "../Assets/Projects/TextToSpeech.png"
+import CardGameImg from "../Assets/Projects/CardMemoryGame.png";
+import eCommImg from "../Assets/Projects/eComm.png";
+import EventImg from "../Assets/Projects/EventCountdown.png";
+import NccImg from "../Assets/Projects/NccManagement.png";
+import TtsImg from "../Assets/Projects/TextToSpeech.png";
+import RedFruitImg from "../Assets/Projects/RedFruitAgro.png";
 
 const useStyle = makeStyles((theme) => ({
   cardGrid: {
@@ -36,6 +37,14 @@ const useStyle = makeStyles((theme) => ({
 }));
 
 const data = [
+  {
+    name: "Red Fruit Agro",
+    description:
+      "A Website with the integrstion of React and Django. Contains Rest API, Redux, Custom User Model, Custom User Authentication and many More",
+    image: RedFruitImg,
+    visit: "https://redfruitagro.com/",
+    src: null,
+  },
   {
     name: "E-Commerce Website - 'eComm'",
     description:
@@ -74,7 +83,8 @@ const data = [
       "This software can read text from input field and can also read whole text file.",
     image: TtsImg,
     visit: null,
-    src: "https://github.com/ChetanBhogade/TextToSpeech/blob/master/TextToSpeech.py",
+    src:
+      "https://github.com/ChetanBhogade/TextToSpeech/blob/master/TextToSpeech.py",
   },
 ];
 
