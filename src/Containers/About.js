@@ -10,14 +10,15 @@ const iconSize = 50;
 const aboutItems = [
   {
     icon: <DiDatabase size={iconSize} />,
-    number: 14,
+    number: 16,
     desc: "Total Projects",
   },
-  { icon: <FaUsers size={iconSize} />, number: 4, desc: "Total Clients" },
+  { icon: <FaUsers size={iconSize} />, number: 6, desc: "Total Clients" },
 ];
 const skills = [
   { name: "Python", progress: 90 },
   { name: "Django", progress: 75 },
+  { name: "Django-Rest Framework", progress: 50 },
   { name: "JavaScript", progress: 78 },
   { name: "ReactJs", progress: 65 },
   { name: "C#", progress: 62 },
