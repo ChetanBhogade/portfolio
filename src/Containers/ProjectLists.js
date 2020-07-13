@@ -18,7 +18,7 @@ const data = [
     image: RedFruitImg,
     visit: "https://redfruitagro.com/",
     src: null,
-    language: ["ReactJs", "Django", "Python"],
+    language: ["ReactJs", "Django", "Python", "Django-Rest", "JavaScript"],
   },
   {
     name: "E-Commerce Website - 'eComm'",
@@ -27,7 +27,7 @@ const data = [
     image: eCommImg,
     visit: "http://chetanbhogade.pythonanywhere.com/",
     src: "https://github.com/ChetanBhogade/E-Commerce-Project",
-    language: ["Django", "Python"],
+    language: ["Django", "Python", "JavaScript"],
   },
   {
     name: "Card-Memory Game",
@@ -36,7 +36,7 @@ const data = [
     image: CardGameImg,
     visit: "https://chetanbhogade.github.io/card-memory-game/",
     src: "https://github.com/ChetanBhogade/card-memory-game",
-    language: ["ReactJs"],
+    language: ["ReactJs", "JavaScript"],
   },
   {
     name: "Event Countdown",
@@ -45,7 +45,7 @@ const data = [
     image: EventImg,
     visit: "https://chetanbhogade.github.io/Event-Countdown/",
     src: "https://github.com/ChetanBhogade/Event-Countdown",
-    language: ["ReactJs"],
+    language: ["ReactJs", "JavaScript"],
   },
   {
     name: "Ncc Management",

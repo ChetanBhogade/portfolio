@@ -5,6 +5,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import ProjectAlbumView from "./ProjectAlbumView";
+import { Container } from "react-bootstrap";
 
 const getData = (allData, language) => {
   const newData = allData.filter((item) => {
@@ -44,8 +45,8 @@ TabPanel.propTypes = {
 
 function a11yProps(index) {
   return {
-    id: `simple-tab-${index}`,
-    "aria-controls": `simple-tabpanel-${index}`,
+    id: `scrollable-auto-tab-${index}`,
+    "aria-controls": `scrollable-auto-tabpanel-${index}`,
   };
 }
 
@@ -68,21 +69,25 @@ export default function SimpleTabs(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
-        <Tabs
-          // variant="fullWidth"
-          value={value}
-          onChange={handleChange}
-          aria-label="simple tabs example"
-          centered
-        >
-          <Tab label="All" {...a11yProps(0)} />
-          <Tab label="Python" {...a11yProps(1)} />
-          <Tab label="Django" {...a11yProps(2)} />
-          <Tab label="React JS" {...a11yProps(3)} />
-          <Tab label="Asp.Net" {...a11yProps(4)} />
-        </Tabs>
-      </AppBar>
+      <Container>
+        <AppBar position="static">
+          <Tabs
+            variant="scrollable"
+            scrollButtons="auto"
+            value={value}
+            onChange={handleChange}
+            aria-label="simple tabs example"
+          >
+            <Tab label="All" {...a11yProps(0)} />
+            <Tab label="Python" {...a11yProps(1)} />
+            <Tab label="Django" {...a11yProps(2)} />
+            <Tab label="Django-Rest" {...a11yProps(3)} />
+            <Tab label="JavaScript" {...a11yProps(4)} />
+            <Tab label="React JS" {...a11yProps(5)} />
+            <Tab label="Asp.Net" {...a11yProps(6)} />
+          </Tabs>
+        </AppBar>
+      </Container>
       <TabPanel value={value} index={0}>
         <ProjectAlbumView data={data} />
       </TabPanel>
@@ -93,9 +98,15 @@ export default function SimpleTabs(props) {
         <ProjectAlbumView data={getData(data, "Django")} />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <ProjectAlbumView data={getData(data, "ReactJs")} />
+        <ProjectAlbumView data={getData(data, "Django-Rest")} />
       </TabPanel>
       <TabPanel value={value} index={4}>
+        <ProjectAlbumView data={getData(data, "JavaScript")} />
+      </TabPanel>
+      <TabPanel value={value} index={5}>
+        <ProjectAlbumView data={getData(data, "ReactJs")} />
+      </TabPanel>
+      <TabPanel value={value} index={6}>
         <ProjectAlbumView data={getData(data, "Asp.Net")} />
       </TabPanel>
     </div>
