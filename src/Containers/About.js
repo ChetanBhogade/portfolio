@@ -20,9 +20,10 @@ const skills = [
   { name: "Django", progress: 75 },
   { name: "Django-Rest Framework", progress: 50 },
   { name: "JavaScript", progress: 78 },
-  { name: "ReactJs", progress: 65 },
+  { name: "React Js", progress: 65 },
   { name: "C#", progress: 62 },
-  { name: "Asp.Net", progress: 71 }
+  { name: "Asp.Net", progress: 71 },
+  { name: "React Native", progress: 29 },
 ];
 
 export class About extends Component {
