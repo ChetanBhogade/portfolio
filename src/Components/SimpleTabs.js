@@ -85,6 +85,7 @@ export default function SimpleTabs(props) {
             <Tab label="JavaScript" {...a11yProps(4)} />
             <Tab label="React JS" {...a11yProps(5)} />
             <Tab label="Asp.Net" {...a11yProps(6)} />
+            <Tab label="React-Native" {...a11yProps(7)} />
           </Tabs>
         </AppBar>
       </Container>
@@ -108,6 +109,9 @@ export default function SimpleTabs(props) {
       </TabPanel>
       <TabPanel value={value} index={6}>
         <ProjectAlbumView data={getData(data, "Asp.Net")} />
+      </TabPanel>
+      <TabPanel value={value} index={7}>
+        <ProjectAlbumView data={getData(data, "React-Native")} />
       </TabPanel>
     </div>
   );

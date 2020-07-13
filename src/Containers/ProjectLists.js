@@ -9,6 +9,7 @@ import EventImg from "../Assets/Projects/EventCountdown.png";
 import NccImg from "../Assets/Projects/NccManagement.png";
 import TtsImg from "../Assets/Projects/TextToSpeech.png";
 import RedFruitImg from "../Assets/Projects/RedFruitAgro.png";
+import IpInfo from "../Assets/Projects/IP-Information.jpg";
 
 const data = [
   {
@@ -65,6 +66,16 @@ const data = [
     src:
       "https://github.com/ChetanBhogade/TextToSpeech/blob/master/TextToSpeech.py",
     language: ["Python"],
+  },
+  {
+    name: "IP-Information",
+    description:
+      "Mobile application for getting an IP address information on android and iOS.",
+    image: IpInfo,
+    visit: null,
+    src:
+      "https://github.com/ChetanBhogade/ip-information",
+    language: ["JavaScript", "React-Native"],
   },
 ];
 
