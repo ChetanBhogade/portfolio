@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
 firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 function App() {
   return (
