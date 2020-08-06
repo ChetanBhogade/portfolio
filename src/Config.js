@@ -1,10 +1,10 @@
 export const firebaseConfig = {
-  apiKey: "AIzaSyAaaXZEx16J-t54tpW3sP6JEhFfDb1wafg",
-  authDomain: "fir-testing-rn.firebaseapp.com",
-  databaseURL: "https://fir-testing-rn.firebaseio.com",
-  projectId: "fir-testing-rn",
-  storageBucket: "fir-testing-rn.appspot.com",
-  messagingSenderId: "490612930520",
-  appId: "1:490612930520:web:2ed37e50dcbf435e0c24ad",
-  measurementId: "G-S03SY9SSV7",
+  apiKey: "AIzaSyBK6BGHeAdqPXOrjTRJ0EmqY1NWin0XXWQ",
+  authDomain: "portfolio-824b7.firebaseapp.com",
+  databaseURL: "https://portfolio-824b7.firebaseio.com",
+  projectId: "portfolio-824b7",
+  storageBucket: "portfolio-824b7.appspot.com",
+  messagingSenderId: "122884067038",
+  appId: "1:122884067038:web:7b7b0a8c6ac723d791bc4f",
+  measurementId: "G-JT0F6TM2GS",
 };
