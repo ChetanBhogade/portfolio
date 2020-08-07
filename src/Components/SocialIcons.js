@@ -4,6 +4,7 @@ import {
   FaFacebook,
   FaTwitter,
   FaInstagramSquare,
+  FaLinkedin,
 } from "react-icons/fa";
 
 import "./SocialIcons.css";
@@ -45,6 +46,15 @@ function SocialIcons(props) {
           target="_blank"
         >
           <FaTwitter size={props.size} />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/chetan-bhogade-42b7b11b0/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <FaLinkedin size={props.size} />
         </a>
       </li>
     </ul>
