@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
+import { AiOutlineHome, AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 
 import "./Footer.css";
 import SocialIcons from "../Components/SocialIcons";
@@ -52,7 +52,7 @@ function Footer() {
                 </Row>
                 <Row>
                   <Col sm="1" className="text-right">
-                    <AiOutlineHome size="25" />
+                    <AiOutlineMail size="25" />
                   </Col>
                   <Col sm="11" className="text-left">
                     <a href="mailto:chetanbhogade999@gmail.com">
