@@ -3,6 +3,8 @@ import { Row, Col } from "react-bootstrap";
 import { DiDatabase } from "react-icons/di";
 import { FaUsers } from "react-icons/fa";
 import ProgressBar from "../Components/ProgressBar";
+import * as firebase from "firebase";
+import { CircularProgress } from "@material-ui/core";
 
 import "./About.css";
 
@@ -15,30 +17,38 @@ const aboutItems = [
   },
   { icon: <FaUsers size={iconSize} />, number: 6, desc: "Total Clients" },
 ];
-const skills = [
-  { name: "Python", progress: 90 },
-  { name: "Django", progress: 75 },
-  { name: "Django-Rest Framework", progress: 50 },
-  { name: "JavaScript", progress: 78 },
-  { name: "React Js", progress: 65 },
-  { name: "C#", progress: 62 },
-  { name: "Asp.Net", progress: 71 },
-  { name: "React Native", progress: 29 },
-];
 
 export class About extends Component {
   constructor(props) {
     super(props);
 
+    this.mySkills = [];
+
     this.state = {
-      progressData: skills.map((item) => ({ ...item, progress: 0 })),
+      progressData: this.mySkills.map((item) => ({ ...item, progress: 0 })),
+      loading: true,
     };
   }
 
   componentDidMount() {
-    this.timer = setTimeout(() => this.progress(4), 100);
-  }
+    const starCountRef = firebase.database().ref("mySkills");
+    starCountRef.on("value", (snapshot) => {
+      snapshot.forEach((childSnapshot) => {
+        // key will be "ada" the first time and "alan" the second time
+        const key = childSnapshot.key;
+        // childData will be the actual contents of the child
+        const childData = childSnapshot.val();
 
+        this.mySkills = [...this.mySkills, { key: key, ...childData }];
+      });
+
+      this.setState({
+        progressData: this.mySkills.map((item) => ({ ...item, progress: 0 })),
+        loading: false,
+      });
+      this.timer = setTimeout(() => this.progress(4), 100);
+    });
+  }
 
   componentWillUnmount() {
     clearTimeout(this.timer);
@@ -47,7 +57,7 @@ export class About extends Component {
   progress(completion) {
     let done = 0;
     this.setState({
-      progressData: skills.map((item, i) => {
+      progressData: this.mySkills.map((item, i) => {
         const { progress: current } = this.state.progressData[i];
         const { progress: max } = item;
         if (current + completion >= max) {
@@ -59,7 +69,7 @@ export class About extends Component {
         };
       }),
     });
-    if (done < skills.length) {
+    if (done < this.mySkills.length) {
       this.timer = setTimeout(() => this.progress(4), 100);
     }
   }
@@ -98,21 +108,27 @@ export class About extends Component {
             </Row>
           </div>
         </Col>
-        <Col lg="6" className="pl-3">
-          <div className="skill">
-            {this.state.progressData.map((item, index) => {
-              return (
-                <div key={index} className="skill-item">
-                  <h4>
-                    {item.name} - {item.progress}%
-                  </h4>
-                  <div className="progress-bar">
-                    <ProgressBar value={item.progress} />
+        <Col lg="6" className="pl-3 my-auto">
+          {this.state.loading ? (
+            <div className="col-md-3 text-center mx-auto my-auto">
+              <CircularProgress size={50} />
+            </div>
+          ) : (
+            <div className="skill">
+              {this.state.progressData.map((item, index) => {
+                return (
+                  <div key={index} className="skill-item">
+                    <h4>
+                      {item.name} - {item.progress}%
+                    </h4>
+                    <div className="progress-bar">
+                      <ProgressBar value={item.progress} />
+                    </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+          )}
         </Col>
       </Row>
     );
