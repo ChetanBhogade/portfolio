@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Container,
@@ -10,6 +10,8 @@ import {
   CardActions,
   Button,
 } from "@material-ui/core";
+import { Modal, Carousel } from "react-bootstrap";
+import * as firebase from "firebase";
 
 const useStyle = makeStyles((theme) => ({
   cardGrid: {
@@ -32,7 +34,30 @@ const useStyle = makeStyles((theme) => ({
 function ProjectAlbumView(props) {
   const classes = useStyle();
 
-  const {data} = props
+  const [show, setShow] = useState(false);
+  const [modalData, setModalData] = useState({
+    name: "",
+    images: [],
+    s_desc: "",
+    tech_stack: [],
+    implemented_topic: [],
+  });
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
+  const handleClose = () => setShow(false);
+  const handleShow = (keyValue) => {
+    const currentData = firebase.database().ref(keyValue);
+    currentData.on("value", (snapshot) => {
+      setModalData(snapshot.val());
+    });
+    setShow(true);
+  };
+
+  const { data } = props;
 
   return (
     <React.Fragment>
@@ -46,6 +71,9 @@ function ProjectAlbumView(props) {
                     className={classes.cardMedia}
                     image={item.image}
                     title={item.name}
+                    onClick={() => {
+                      handleShow(item.key);
+                    }}
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -86,6 +114,57 @@ function ProjectAlbumView(props) {
           })}
         </Grid>
       </Container>
+      <Modal
+        show={show}
+        animation={true}
+        centered={true}
+        className="mt-5 mb-5"
+        onHide={() => handleClose()}
+      >
+        <Modal.Header closeButton={true}>
+          <Modal.Title>{modalData.name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Container>
+            <Carousel activeIndex={index} onSelect={handleSelect}>
+              {modalData.images.map((item, index) => {
+                return (
+                  <Carousel.Item key={index}>
+                    <img
+                      className="d-block w-100"
+                      src={item}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                );
+              })}
+            </Carousel>
+            <hr />
+            <h5>Description: - </h5>
+            <p>{modalData.s_desc}</p>
+            <hr />
+            <h5>Topics Covered: - </h5>
+            <ul>
+              {modalData.implemented_topic.map((item, index) => {
+                return <li key={index}>{item}</li>;
+              })}
+            </ul>
+            <hr />
+            <h5>Tech Stack Used For This Proejct: - </h5>
+            <ul>
+            {modalData.tech_stack.map((item, index) => {
+                return <li key={index}>{item}</li>;
+              })}
+            </ul>
+          </Container>
+        </Modal.Body>
+        <Modal.Footer className="mb-5">
+          <Button size="small" onClick={() => handleClose()} color="secondary">
+            Close
+          </Button>
+          <hr />
+        </Modal.Footer>
+      </Modal>
     </React.Fragment>
   );
 }
