@@ -1,11 +1,11 @@
 import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import { Paper } from "@material-ui/core";
-import Img from "../Assets/ChetanBhogade.jpg";
 import { FiCalendar, FiPhone, FiMail, FiHome } from "react-icons/fi";
+import SocialIcons from "../Components/SocialIcons";
 
 import "./Banner.css";
-import SocialIcons from "../Components/SocialIcons";
+import Img from "../Assets/ChetanBhogade.jpg";
 
 function Banner() {
   return (
@@ -25,7 +25,7 @@ function Banner() {
             </p>
             <ul className="list">
               <li>
-                <a href="/">
+                <a href="/portfolio">
                   <FiCalendar size="23" />
                   3rd August, 1999
                 </a>
@@ -43,7 +43,7 @@ function Banner() {
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a href="/portfolio">
                   <FiHome size="23" />
                   Maharashtra, India
                 </a>
