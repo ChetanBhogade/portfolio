@@ -49,10 +49,15 @@ function ProjectAlbumView(props) {
   };
 
   const handleClose = () => setShow(false);
-  const handleShow = (keyValue) => {
-    const currentData = firebase.database().ref(keyValue);
+
+  const handleShow = (item) => {
+    const currentData = firebase.database().ref(item.key);
     currentData.on("value", (snapshot) => {
-      setModalData(snapshot.val());
+      setModalData({
+        ...snapshot.val(),
+        visit: item.visit,
+        src: item.src,
+      });
     });
     setShow(true);
   };
@@ -72,11 +77,18 @@ function ProjectAlbumView(props) {
                     image={item.image}
                     title={item.name}
                     onClick={() => {
-                      handleShow(item.key);
+                      handleShow(item);
                     }}
                   />
                   <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography
+                      gutterBottom
+                      onClick={() => {
+                        handleShow(item);
+                      }}
+                      variant="h5"
+                      component="h2"
+                    >
                       {item.name}
                     </Typography>
                     <Typography>{item.description}</Typography>
@@ -118,7 +130,8 @@ function ProjectAlbumView(props) {
         show={show}
         animation={true}
         centered={true}
-        className="mt-5 mb-5"
+        size="lg"
+        className="mt-5"
         onHide={() => handleClose()}
       >
         <Modal.Header closeButton={true}>
@@ -152,18 +165,42 @@ function ProjectAlbumView(props) {
             <hr />
             <h5>Tech Stack Used For This Proejct: - </h5>
             <ul>
-            {modalData.tech_stack.map((item, index) => {
+              {modalData.tech_stack.map((item, index) => {
                 return <li key={index}>{item}</li>;
               })}
             </ul>
+            <hr />
+
+            {modalData.visit ? (
+              <a
+                href={modalData.visit}
+                rel="noopener noreferrer"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                <Button size="small" color="primary">
+                  Visit Project
+                </Button>
+              </a>
+            ) : null}
+
+            <br />
+
+            {modalData.src ? (
+              <a
+                href={modalData.src}
+                rel="noopener noreferrer"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                <Button size="small" color="secondary">
+                  View Project Source Code
+                </Button>
+              </a>
+            ) : null}
           </Container>
         </Modal.Body>
-        <Modal.Footer className="mb-5">
-          <Button size="small" onClick={() => handleClose()} color="secondary">
-            Close
-          </Button>
-          <hr />
-        </Modal.Footer>
+        <Modal.Footer className="mb-5"></Modal.Footer>
       </Modal>
     </React.Fragment>
   );
