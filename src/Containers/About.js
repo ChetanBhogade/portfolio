@@ -80,18 +80,17 @@ export class About extends Component {
         <Col lg="6" className="pr-5">
           <div>
             <h4>About Myself</h4>
-            <p>
-              I'm a Full Stack Web developer. <br />
-              A hardworking person who is attentive to details and focused on
-              the quality of work. I like to learn the latest technologies and
-              continuously improves myself, always try to help other people.
+            <p className="my-info">
+              Hi, I'm Chetan and I am a Full Stack Web Developer. <br />
+              I create Front-end components, such as User Interfaces and
+              Back-end components, such as Application Code and Databases.
+              <br />
+              I like to learn the latest technologies and continuously improves
+              myself. I always try to help other people.
               <br />
               My knowledge of Python and JavaScript will help me to create a
               product that will meet your expectations. <br />
-              CORE Expertise in Web Development with Django. Whether You’ve lost
-              your original developer, require additional work, or need a brand
-              new app/web front-end/back-end, I can step in and take over
-              wherever YOU need.
+              My Core Expertise in Web Development with Django.
             </p>
             <Row>
               {aboutItems.map((item, index) => {

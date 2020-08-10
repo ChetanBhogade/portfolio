@@ -11,10 +11,14 @@
   text-transform: uppercase;
 }
 
-.about p {
+.about .my-info {
   max-width: 495px;
   font-family: "Roboto", sans-serif;
   margin-bottom: 40px;
+  /* line-height: 30px; */
+  text-align: justify;
+  word-spacing: 4px;
+  letter-spacing: 0.5px;
 }
 
 .about-item {
@@ -48,7 +52,7 @@
 }
 
 .skill-item {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .skill-item h4 {
@@ -56,7 +60,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #222222;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   text-transform: capitalize;
   margin-left: 5px;
 }
