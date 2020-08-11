@@ -13,7 +13,7 @@ function Banner() {
       <Paper elevation={3} className="p-4">
         <Row>
           <Col lg="8" md="12" sm="12" className="mx-auto pr-4">
-            <Image src={Img} style={{ width: "100%" }} rounded />
+            <Image src={Img} alt="Chetan Bhogade" style={{ width: "100%" }} rounded />
           </Col>
           <Col lg="4" md="12" sm="12" className="personal-text mt-3 pl-4">
             <h6>Hello Everybody, I am </h6>
