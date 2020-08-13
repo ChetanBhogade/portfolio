@@ -10,6 +10,7 @@ import { firebaseConfig } from "./Config"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
+import ContactForm from "./Containers/ContactForm";
 
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
@@ -22,6 +23,7 @@ function App() {
         <Banner />
         <About />
         <ProjectLists />
+        <ContactForm />
       </Container>
       <Footer />
     </div>
