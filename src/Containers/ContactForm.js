@@ -1,19 +1,36 @@
 import React from "react";
-
-import "./ContactForm.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { TextField } from "@material-ui/core";
+import * as firebase from "firebase";
+
+import "./ContactForm.css";
 
 function ContactForm() {
-
   const handleSubmit = (event) => {
-    event.preventDefault()
+    event.preventDefault();
     const name = event.target.name.value;
     const email = event.target.email.value;
     const phoneNumber = event.target.phoneNumber.value;
     const subject = event.target.subject.value;
     const message = event.target.message.value;
-  }
+
+    var contactFormRef = firebase.database().ref("contactMeForm");
+    var newContactFormRef = contactFormRef.push();
+    newContactFormRef
+      .set({
+        name: name,
+        email: email,
+        phoneNumber: phoneNumber,
+        subject: subject,
+        message: message,
+      })
+      .then(() => {
+        console.log("submitted Successfully.");
+      })
+      .catch((error) => {
+        console.log("Error Occur. Error is: ", error);
+      });
+  };
 
   return (
     <div className="contact-section">
