@@ -119,13 +119,13 @@ function ContactForm() {
                 >
                   Submit
                 </Button>
-                <p
+                {/* <p
                   style={{ fontSize: "10px", opacity: "0.8" }}
                   className="text-right"
                 >
                   Note: - If you not getting any response within 48 Hours then,
                   try contacting me through my Mobile Number
-                </p>
+                </p> */}
               </form>
             </Col>
           </Row>
