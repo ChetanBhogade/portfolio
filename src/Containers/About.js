@@ -3,8 +3,9 @@ import { Row, Col } from "react-bootstrap";
 import { DiDatabase } from "react-icons/di";
 import { FaUsers } from "react-icons/fa";
 import ProgressBar from "../Components/ProgressBar";
-import * as firebase from "firebase";
+import firebase from "firebase/compat/app";
 import { CircularProgress } from "@material-ui/core";
+import "firebase/compat/database";
 
 import "./About.css";
 

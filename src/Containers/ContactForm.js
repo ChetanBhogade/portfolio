@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button, Alert } from "react-bootstrap";
 import { TextField, CircularProgress, Snackbar } from "@material-ui/core";
-import * as firebase from "firebase";
+import firebase from "firebase/compat/app";
+import "firebase/compat/database";
 
 import "./ContactForm.css";
 
