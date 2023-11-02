@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import SimpleTabs from "../Components/SimpleTabs";
-import * as firebase from "firebase";
+import firebase from "firebase/compat/app";
 import { CircularProgress } from "@material-ui/core";
+import "firebase/compat/database";
 
 import "./ProjectList.css";
 

@@ -11,7 +11,8 @@ import {
   Button,
 } from "@material-ui/core";
 import { Modal, Carousel } from "react-bootstrap";
-import * as firebase from "firebase";
+import firebase from "firebase/compat/app";
+import "firebase/compat/database";
 
 const useStyle = makeStyles((theme) => ({
   cardGrid: {

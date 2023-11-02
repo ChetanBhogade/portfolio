@@ -5,12 +5,13 @@ import Banner from "./Containers/Banner";
 import About from "./Containers/About";
 import ProjectLists from "./Containers/ProjectLists";
 import Footer from "./Containers/Footer";
-import * as firebase from "firebase";
-import { firebaseConfig } from "./Config"
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./App.css";
+import firebase from "firebase/compat/app";
+import { firebaseConfig } from "./Config";
 import ContactForm from "./Containers/ContactForm";
+import "firebase/compat/analytics";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
