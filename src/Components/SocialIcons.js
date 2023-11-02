@@ -21,7 +21,7 @@ function SocialIcons(props) {
           <FaGithub size={props.size} />
         </a>
       </li>
-      <li>
+      {/* <li>
         <a
           href="https://www.facebook.com/chetan.bhogade.3/"
           rel="noopener noreferrer"
@@ -29,7 +29,7 @@ function SocialIcons(props) {
         >
           <FaFacebook size={props.size} />
         </a>
-      </li>
+      </li> */}
       <li>
         <a
           href="https://www.instagram.com/chetan_bhogade/"

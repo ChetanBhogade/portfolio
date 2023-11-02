@@ -13,29 +13,34 @@ function Banner() {
       <Paper elevation={3} className="p-4">
         <Row>
           <Col lg="8" md="12" sm="12" className="mx-auto pr-4">
-            <Image src={Img} alt="Chetan Bhogade" style={{ width: "100%" }} rounded />
+            <Image
+              src={Img}
+              alt="Chetan Bhogade"
+              style={{ width: "100%" }}
+              rounded
+            />
           </Col>
           <Col lg="4" md="12" sm="12" className="personal-text mt-3 pl-4">
             <h6>Hello Everybody, I am </h6>
             <h3>Chetan Bhogade</h3>
-            <h4>Full Stack Web Developer</h4>
+            <h4>Full Stack Developer</h4>
             <p>
-              Proven ability in optimizing web functionalities that improve data
-              retrieval and workflow efficiencies.
+              Proven ability in optimizing web & mobile functionalities that
+              improve data retrieval and workflow efficiencies.
             </p>
             <ul className="list">
-              <li>
+              {/* <li>
                 <a href="/portfolio">
                   <FiCalendar size="23" />
                   3rd August, 1999
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="tel:+918446574294">
                   <FiPhone size="23" />
                   +91 8446574294
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="mailto:chetanbhogade999@gmail.com">
                   <FiMail size="23" />

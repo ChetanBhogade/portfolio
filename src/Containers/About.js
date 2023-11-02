@@ -12,10 +12,10 @@ const iconSize = 50;
 const aboutItems = [
   {
     icon: <DiDatabase size={iconSize} />,
-    number: 16,
+    number: 18,
     desc: "Total Projects",
   },
-  { icon: <FaUsers size={iconSize} />, number: 6, desc: "Total Clients" },
+  { icon: <FaUsers size={iconSize} />, number: 8, desc: "Total Clients" },
 ];
 
 export class About extends Component {
@@ -81,16 +81,15 @@ export class About extends Component {
           <div>
             <h4>About Myself</h4>
             <p className="my-info">
-              Hi, I'm Chetan and I am a Full Stack Web Developer. <br />
-              I create Front-end components, such as User Interfaces and
-              Back-end components, such as Application Code and Databases.
+              Hello, I'm Chetan, a Full Stack Developer passionate about
+              crafting exceptional web and mobile experiences. I specialize in
+              both front-end user interfaces and back-end application code,
+              including databases.
+              <br /> <br />
+              I'm dedicated to staying at the forefront of technology,
+              constantly improving my skills, and helping others.
               <br />
-              I like to learn the latest technologies and continuously improves
-              myself. I always try to help other people.
-              <br />
-              My knowledge of Python and JavaScript will help me to create a
-              product that will meet your expectations. <br />
-              My Core Expertise in Web Development with Django.
+              Let's collaborate to bring your ideas to life!
             </p>
             <Row>
               {aboutItems.map((item, index) => {

@@ -16,9 +16,9 @@ function Footer() {
                 <h3>About Me</h3>
               </div>
               <p>
-                I'm a full stack web developeer and proven ability in optimizing
-                web functionalities that improve data retrieval and workflow
-                efficiencies.
+                I'm a full stack developer and Proven ability in optimizing web
+                & mobile functionalities that improve data retrieval and
+                workflow efficiencies.
               </p>
               <p>
                 Copyright &copy; {new Date().getFullYear()} | All rights
@@ -41,7 +41,7 @@ function Footer() {
                     <p>ManvelPada, Virar (East)</p>
                   </Col>
                 </Row>
-                <Row>
+                {/* <Row>
                   <Col sm="1" className="text-right">
                     <AiOutlinePhone size="25" />
                   </Col>
@@ -49,7 +49,7 @@ function Footer() {
                     <h6>+91 8446574294</h6>
                     <p>Mon to Sat - 8am to 8pm</p>
                   </Col>
-                </Row>
+                </Row> */}
                 <Row>
                   <Col sm="1" className="text-right">
                     <AiOutlineMail size="25" />
